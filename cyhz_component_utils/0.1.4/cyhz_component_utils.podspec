@@ -29,25 +29,25 @@ Pod::Spec.new do |s|
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '7.0'
-  
+
      s.source_files = 'cyhz_component_utils/*'
      s.public_header_files = 'cyhz_component_utils/*.h'
    
- #  s.subspec 'util' do |ss|
-#       ss.source_files = 'cyhz_component_utils/Classes/util/*'
-#       ss.public_header_files = 'cyhz_component_utils/Classes/util/*.h'
+ s.subspec 'util' do |ss|
+       ss.source_files = 'cyhz_component_utils/Classes/util/*'
+       ss.public_header_files = 'cyhz_component_utils/Classes/util/*.h'
 # #       util.frameworks = 'util'
-#   end
+   end
 # 
-#   s.subspec 'save' do |ss|
-#       ss.source_files = 'cyhz_component_utils/Classes/save/**/*'
-#       ss.public_header_files = 'cyhz_component_utils/Classes/save/**/*.h'
-#       ss.dependency 'cyhz_component_utils/util'
-#   end
+   s.subspec 'save' do |ss|
+       ss.source_files = 'cyhz_component_utils/Classes/save/**/*'
+       ss.public_header_files = 'cyhz_component_utils/Classes/save/**/*.h'
+      ss.dependency 'cyhz_component_utils/util'
+   end
 
-  # s.resource_bundles = {
-  #   'cyhz_component_utils' => ['cyhz_component_utils/Assets/*.png']
-  # }
+   # s.resource_bundles = {
+#      'cyhz_component_utils' => ['cyhz_component_utils/Assets/*.png']
+#    }
 
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
